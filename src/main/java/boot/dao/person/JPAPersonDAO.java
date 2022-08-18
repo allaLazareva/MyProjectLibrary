@@ -62,11 +62,6 @@ public class JPAPersonDAO implements DAOPersonInterface {
 
     }
 
-    @Override
-    public void deletePerson(PersonModel personModel) {
-        personEntityRepository.delete(converterModelToEntity.convert(personModel));
-    }
-
 
     @Override
     public void save(PersonModel personModel) {

@@ -19,6 +19,4 @@ public interface PersonServiceInterface {
 
     void deletePersonById(Integer id);
 
-    void deletePerson(PersonModel personModel);
-
 }

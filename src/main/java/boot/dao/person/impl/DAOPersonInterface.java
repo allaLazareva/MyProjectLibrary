@@ -19,6 +19,4 @@ public interface DAOPersonInterface {
     List<PersonModel> findPersonByBooksName(String name);
 
      void deletePersonById(Integer id);
-
-     void deletePerson(PersonModel personModel);
 }

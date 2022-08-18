@@ -73,12 +73,6 @@ public class PersonController {
     return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PostMapping("/delete")
-    public ResponseEntity<PersonEntity> deletePerson(@RequestBody PersonModel personModel){
-        personService.deletePerson(personModel);
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
-
 
     @ExceptionHandler
     private ResponseEntity<ErrorResponse> handlerException(PersonNotFoundException e) {
