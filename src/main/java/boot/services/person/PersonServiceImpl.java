@@ -47,6 +47,11 @@ public class PersonServiceImpl implements PersonServiceInterface {
     }
 
     @Override
+    public void deletePerson(PersonModel personModel) {
+        personDAO.deletePerson(personModel);
+    }
+
+    @Override
     public void save(PersonModel personModel) {
         personDAO.save(personModel);
 
