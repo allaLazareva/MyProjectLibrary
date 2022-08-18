@@ -17,4 +17,6 @@ public interface PersonServiceInterface {
 
     List<PersonModel> findPersonByBooksName(String name);
 
+    void deletePersonById(Integer id);
+
 }

@@ -56,6 +56,12 @@ public class JPAPersonDAO implements DAOPersonInterface {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public void deletePersonById(Integer id) {
+       personEntityRepository.deleteById(id);
+
+    }
+
 
     @Override
     public void save(PersonModel personModel) {

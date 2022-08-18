@@ -17,4 +17,6 @@ public interface DAOPersonInterface {
     void updatePerson(Integer id, PersonModel personModel);
 
     List<PersonModel> findPersonByBooksName(String name);
+
+     void deletePersonById(Integer id);
 }
